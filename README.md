@@ -9,11 +9,13 @@ npm install
 3. **Configurar variables de entorno:**
 .env
 
-4. **Edita el archivo `.env` con tus configuraciones (solo de ejemplo):**
+4. **Edita el archivo `.env` con tus configuraciones, puede guiarte el siguiente ejemplo:**
 
-    - MONGODB_URI=mongodb://localhost:27017/restapi-mongo
-    - PORT=6000
-    - BASE_URL=http://localhost:6000
+```env
+MONGODB_URI=mongodb://localhost:27017/restapi-mongo
+PORT=5000
+BASE_URL=http://localhost:5000
+```
 
 5. **Crea la carpeta uploads en el directorio raiz**
 mkdir uploads

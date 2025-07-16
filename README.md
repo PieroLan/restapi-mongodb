@@ -17,9 +17,11 @@ PORT=5000
 BASE_URL=http://localhost:5000
 ```
 
-5. **Crea la carpeta uploads en el directorio raiz**
-mkdir uploads
+5. **Crea la carpeta uploads en el directorio raiz: **
+uploads
 
 1. **Ejecutar el servidor:**
-    - npm run server
-    - npm start
+```bash
+npm run server
+npm start
+```

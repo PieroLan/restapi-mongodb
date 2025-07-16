@@ -11,17 +11,17 @@ npm install
 
 4. **Edita el archivo `.env` con tus configuraciones, puede guiarte el siguiente ejemplo:**
 
-```env
-MONGODB_URI=mongodb://localhost:27017/restapi-mongo
-PORT=5000
-BASE_URL=http://localhost:5000
-```
+    ```env
+    MONGODB_URI=mongodb://localhost:27017/restapi-mongo
+    PORT=5000
+    BASE_URL=http://localhost:5000
+    ```
 
-5. **Crea la carpeta uploads en el directorio raiz: **
+5. **Crea la carpeta uploads en el directorio raiz:**
 uploads
 
-1. **Ejecutar el servidor:**
-```bash
-npm run server
-npm start
-```
+6. **Ejecutar el servidor:**
+    ```bash
+    npm run server
+    npm start
+    ```

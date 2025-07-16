@@ -10,15 +10,14 @@ npm install
 .env
 
 4. **Edita el archivo `.env` con tus configuraciones:**
-env
-MONGODB_URI=<URL>
-PORT=6000
-BASE_URL=http://localhost:6000
+
+    - MONGODB_URI=<URL>
+    - PORT=6000
+    - BASE_URL=http://localhost:6000
 
 5. **Crea la carpeta uploads en el directorio raiz**
-bash
 mkdir uploads
 
 6. **Ejecutar el servidor:**
-npm run server
-npm start
+    - npm run server
+    - npm start

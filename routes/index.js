@@ -14,6 +14,13 @@ import {
   eliminarProducto,
   actualizarProducto,
 } from "../controllers/productosController.js";
+import {
+  crearPedido,
+  listarPedidos,
+  mostrarPedido,
+  eliminarPedido,
+  actualizarPedido,
+} from "../controllers/pedidosController.js";
 
 //creamos router
 const router = express.Router();
@@ -31,5 +38,12 @@ router.get("/productos", listarProductos);
 router.get("/productos/:id", mostrarProducto);
 router.delete("/productos/:id", eliminarProducto);
 router.put("/productos/:id", upload.single("imagen"), actualizarProducto);
+
+//rutas pedidos
+router.post("/pedidos", crearPedido);
+router.get("/pedidos", listarPedidos);
+router.get("/pedidos/:id", mostrarPedido);
+router.delete("/pedidos/:id", eliminarPedido);
+router.put("/pedidos/:id", actualizarPedido);
 
 export default router;

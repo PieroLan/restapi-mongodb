@@ -49,7 +49,7 @@ const mostrarProducto = async (req, res) => {
 const actualizarProducto = async (req, res) => {
   try {
     //verificamos si existe el producto
-    let producto = await Productos.findById(req.params.id);
+    const producto = await Productos.findById(req.params.id);
     if (!producto) {
       return res.status(404).json({ message: "Producto no encontrado" });
     }
@@ -67,7 +67,7 @@ const actualizarProducto = async (req, res) => {
       dataNueva,
       { new: true }
     );
-    res.status(201).json({ message: "Producto actualizado exitosamente", producto: productoActualizado });
+    res.status(200).json({ message: "Producto actualizado exitosamente", producto: productoActualizado });
   } catch (error) {
     res.status(400).json({ message: "ID no válido" });
   }
